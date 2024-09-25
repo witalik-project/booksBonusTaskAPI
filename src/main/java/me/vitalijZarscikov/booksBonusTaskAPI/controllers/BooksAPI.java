@@ -27,7 +27,7 @@ public class BooksAPI {
             @RequestParam(required = false) String title,
             @RequestParam(required = false) String author,
             @RequestParam(required = false) Integer rating,
-            @RequestParam(required = false) Integer publicationYr
+            @RequestParam(value="year", required = false) Integer publicationYr
     ) {
         Set<Books> books = new HashSet<>();
 
